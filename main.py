@@ -87,11 +87,11 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	"""
 	### TODO
     results = []
-    for size in sizes:
-      mylist = list(range(int(size)))
-      result.append((   len(mylist),time_search(linear_search, mylist, -1),time_search(binary_search, mylist, -1)))
+    for n in sizes:
+      listz = list(range(int(n)))
+      result.append(( n, time_search(linear_search, listz, -1), time_seasrch(binary_search, listz, -1)))
 
-return result
+    return results
 	###
 
 def print_results(results):
